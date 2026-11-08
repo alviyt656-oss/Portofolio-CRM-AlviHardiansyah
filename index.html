@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alvi Hardiansyah | CRM Specialist &amp; Customer Experience - Bandung</title>
+<meta name="description" content="Alvi Hardiansyah, CRM Specialist e-commerce di Bandung. Pengalaman memantau feedback pelanggan, mengelola data dan laporan layanan, serta membangun dashboard komplain dan CRM sendiri. Terbuka untuk posisi CRM Specialist dan Customer Experience.">
+<meta property="og:title" content="Alvi Hardiansyah | CRM Specialist &amp; Customer Experience">
+<meta property="og:description" content="Feedback pelanggan, data komplain, laporan layanan, dan dashboard CRM. Berbasis di Bandung.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alvi Hardiansyah",
+  "jobTitle": "CRM Specialist",
+  "email": "mailto:alvihardiansyah049@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bandung", "addressRegion": "Jawa Barat", "addressCountry": "ID" },
+  "alumniOf": "Universitas Adhirajasa Reswara Sanjaya",
+  "knowsAbout": ["Customer Relationship Management", "Customer Experience", "Data Analytics", "E-Commerce", "Dashboard"]
+}
+</script>
+<style>
+  :root {
+    --bg: #f3f0ff;
+    --surface: #ffffff;
+    --ink: #1b1b3a;
+    --muted: #4d4d70;
+    --blue: #3d5afe;
+    --pink: #ff4f9a;
+    --lemon: #ffe14d;
+    --mint: #2ee6a6;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; background: var(--bg); }
+  html:has(dialog[open]) { overflow: hidden; }
+  body { margin: 0; color: var(--ink); font: 400 1.06rem/1.65 "DM Sans", system-ui, sans-serif; overflow-x: hidden; }
+  h1, h2, h3 { font-family: "Bricolage Grotesque", sans-serif; margin: 0; line-height: 1.1; }
+  a { color: inherit; }
+  :focus-visible { outline: 4px solid var(--blue); outline-offset: 3px; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  /* Komponen dasar bergaya pop */
+  .box { background: var(--surface); border: 3px solid var(--ink); border-radius: 18px; box-shadow: 6px 6px 0 var(--ink); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+    font: 700 1rem "DM Sans", sans-serif; text-decoration: none; color: var(--ink);
+    background: var(--lemon); border: 3px solid var(--ink); border-radius: 999px; padding: 10px 22px;
+    box-shadow: 4px 4px 0 var(--ink); transition: transform .12s, box-shadow .12s;
+  }
+  .btn:hover { transform: translate(-2px, -2px) rotate(-1deg); box-shadow: 6px 6px 0 var(--ink); }
+  .btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--ink); }
+  .btn.blue { background: var(--blue); color: #fff; }
+  .btn.pink { background: var(--pink); color: #fff; }
+  .btn.mint { background: var(--mint); }
+  .btn.white { background: #fff; }
+
+  /* Nav */
+  nav { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 3px solid var(--ink); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 64px; }
+  nav ul { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; overflow-x: auto; }
+  nav ul a { display: block; padding: 6px 14px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: .95rem; white-space: nowrap; border: 2px solid transparent; }
+  nav ul a:hover { border-color: var(--ink); background: var(--lemon); }
+  nav .btn { padding: 6px 16px; font-size: .92rem; box-shadow: 3px 3px 0 var(--ink); }
+
+  /* Hero */
+  .hero { position: relative; padding: 72px 0 56px; }
+  .hero .tag { display: inline-flex; align-items: center; gap: 8px; background: var(--mint); border: 3px solid var(--ink); border-radius: 999px; padding: 4px 16px; font-weight: 700; margin-bottom: 20px; box-shadow: 3px 3px 0 var(--ink); }
+  .hero .tag::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--ink); animation: pulse 1.4s infinite; }
+  .hero h1 { font-size: clamp(2.6rem, 9vw, 5.6rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 18px; }
+  .hero .role { display: inline-block; background: var(--lemon); border: 3px solid var(--ink); border-radius: 12px; padding: 4px 14px; font: 600 clamp(1.05rem, 3vw, 1.5rem) "Bricolage Grotesque", sans-serif; transform: rotate(-1.5deg); box-shadow: 4px 4px 0 var(--ink); }
+  .hero .loc { margin: 22px 0 28px; font-weight: 500; }
+  .actions { display: flex; flex-wrap: wrap; gap: 14px; }
+  .sticker { position: absolute; display: grid; place-items: center; text-align: center; border: 3px solid var(--ink); border-radius: 50%; font: 800 1rem/1.15 "Bricolage Grotesque", sans-serif; box-shadow: 4px 4px 0 var(--ink); }
+  .sticker.a { right: 4%; top: 56px; width: 150px; height: 150px; background: var(--pink); color: #fff; transform: rotate(12deg); font-size: 1.15rem; }
+  .sticker.a b { display: block; font-size: 2.4rem; }
+  .sticker.b { right: 22%; bottom: 24px; width: 112px; height: 112px; background: var(--blue); color: #fff; transform: rotate(-10deg); font-size: .95rem; }
+  .sticker.b b { display: block; font-size: 1.7rem; }
+
+  /* Pita kata kunci */
+  .marquee { background: var(--ink); color: var(--lemon); border-block: 3px solid var(--ink); overflow: hidden; white-space: nowrap; transform: rotate(-1deg); margin: 8px -20px 0; }
+  .marquee div { display: inline-block; padding: 12px 0; font: 600 1.2rem "Bricolage Grotesque", sans-serif; animation: slide 28s linear infinite; }
+  .marquee span { margin: 0 22px; }
+  .marquee span::after { content: "★"; margin-left: 44px; color: var(--pink); }
+
+  /* Section */
+  section { padding: 64px 0 8px; }
+  .sec-head { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  h2 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; letter-spacing: -0.02em; }
+  .pill { background: var(--pink); color: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2px 14px; font-weight: 700; font-size: .9rem; transform: rotate(2deg); box-shadow: 3px 3px 0 var(--ink); }
+  .lead { font-size: 1.2rem; max-width: 62ch; margin: 0 0 28px; }
+
+  /* Poin utama */
+  .points { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 22px; margin-top: 8px; }
+  .point { padding: 20px 22px; transition: transform .15s; }
+  .point:hover { transform: translateY(-6px) rotate(-1deg); }
+  .point b { display: block; font: 800 2.6rem/1 "Bricolage Grotesque", sans-serif; margin-bottom: 8px; }
+  .point span { font-weight: 500; }
+  .point.c1 { background: var(--lemon); } .point.c2 { background: var(--mint); } .point.c3 { background: var(--pink); color: #fff; } .point.c4 { background: var(--blue); color: #fff; }
+
+  /* Kartu pengalaman */
+  .stack { display: grid; gap: 28px; }
+  .xp { overflow: hidden; display: grid; grid-template-columns: 200px 1fr; transition: transform .15s; }
+  .xp:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
+  .xp .date { padding: 22px; border-right: 3px solid var(--ink); display: flex; flex-direction: column; gap: 8px; font-weight: 700; }
+  .xp .date small { font-weight: 500; font-size: .92rem; }
+  .xp.m .date { background: var(--mint); } .xp.p .date { background: var(--pink); color: #fff; } .xp.b .date { background: var(--blue); color: #fff; }
+  .star { align-self: flex-start; background: var(--lemon); color: var(--ink); border: 2px solid var(--ink); border-radius: 999px; padding: 0 10px; font-size: .82rem; }
+  .xp .body { padding: 22px 26px; }
+  .xp h3 { font-size: 1.45rem; font-weight: 800; }
+  .xp .org { margin: 4px 0 14px; color: var(--muted); font-weight: 500; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; padding: 0; list-style: none; }
+  .chips li { background: var(--bg); border: 2px solid var(--ink); border-radius: 999px; padding: 2px 14px; font-weight: 700; font-size: .92rem; }
+  .chips li::before { content: "✓ "; color: var(--blue); }
+
+  /* Skill */
+  .skillgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .skill { padding: 22px; }
+  .skill h3 { font-size: 1.2rem; margin-bottom: 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .tags li { border: 2px solid var(--ink); border-radius: 10px; padding: 1px 12px; font-weight: 500; font-size: .95rem; transition: transform .12s, background .12s; }
+  .tags li:hover { transform: translateY(-3px) rotate(-2deg); background: var(--lemon); }
+  .skill:nth-child(1) { background: #fff6bf; } .skill:nth-child(2) { background: #d4fbec; } .skill:nth-child(3) { background: #ffdcec; }
+  .skill:nth-child(4) { background: #dde3ff; } .skill:nth-child(5) { background: #fff6bf; } .skill:nth-child(6) { background: #d4fbec; }
+  .skill .tags li { background: #fff; }
+
+  /* Pendidikan & organisasi */
+  .duo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card { padding: 22px 24px; }
+  .card h3 { font-size: 1.15rem; font-weight: 800; }
+  .card .sub { display: inline-block; margin: 8px 0; background: var(--lemon); border: 2px solid var(--ink); border-radius: 8px; padding: 0 10px; font-weight: 700; font-size: .9rem; }
+  .card p { margin: 6px 0 0; }
+  .card ul { margin: 8px 0 0; padding-left: 20px; }
+
+  /* Footer */
+  footer { margin-top: 72px; background: var(--blue); color: #fff; border-top: 3px solid var(--ink); padding: 64px 0 120px; }
+  footer h2 { margin-bottom: 12px; }
+  footer p { font-size: 1.15rem; max-width: 56ch; margin: 0 0 28px; }
+
+  /* FAB */
+  .fab { position: fixed; right: 20px; bottom: 20px; z-index: 30; background: var(--pink); color: #fff; font-size: 1.05rem; padding: 14px 24px; animation: bounce 2.4s infinite; }
+
+  /* Pop-up */
+  dialog { padding: 0; border: 0; background: transparent; max-width: min(680px, calc(100vw - 24px)); width: 100%; max-height: calc(100dvh - 24px); overflow: visible; color: var(--ink); }
+  dialog::backdrop { background: rgba(27, 27, 58, .62); backdrop-filter: blur(3px); }
+  dialog[open] { animation: pop .38s cubic-bezier(.2, 1.5, .4, 1); }
+  dialog[open]::backdrop { animation: fade .25s; }
+  .dlg { background: var(--surface); border: 3px solid var(--ink); border-radius: 20px; box-shadow: 8px 8px 0 var(--ink); overflow: hidden; max-height: calc(100dvh - 40px); display: flex; flex-direction: column; }
+  .dlg header { padding: 20px 24px; border-bottom: 3px solid var(--ink); display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+  .dlg header h3 { font-size: 1.5rem; font-weight: 800; }
+  .dlg header p { margin: 4px 0 0; font-weight: 500; }
+  .dlg .x { flex: none; width: 42px; height: 42px; padding: 0; justify-content: center; font-size: 1.2rem; box-shadow: 3px 3px 0 var(--ink); background: #fff; color: var(--ink); }
+  .dlg .content { padding: 22px 26px 26px; overflow-y: auto; }
+  .dlg ul.det { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+  .dlg ul.det li { padding-left: 34px; position: relative; }
+  .dlg ul.det li::before { content: "★"; position: absolute; left: 0; top: -1px; width: 24px; height: 24px; display: grid; place-items: center; background: var(--lemon); border: 2px solid var(--ink); border-radius: 50%; font-size: .8rem; }
+  .dlg.m header { background: var(--mint); } .dlg.p header { background: var(--pink); color: #fff; } .dlg.b header { background: var(--blue); color: #fff; } .dlg.y header { background: var(--lemon); }
+  .contact-list { display: grid; gap: 14px; }
+  .contact-list .btn { justify-content: center; width: 100%; }
+
+  @keyframes pop { from { transform: scale(.7) rotate(-3deg); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes slide { to { transform: translateX(-50%); } }
+  @keyframes bounce { 0%, 80%, 100% { transform: translateY(0); } 90% { transform: translateY(-8px); } }
+  @keyframes pulse { 50% { transform: scale(1.5); opacity: .5; } }
+
+  @media (max-width: 760px) {
+    .sticker.a { width: 96px; height: 96px; font-size: .8rem; right: 8px; top: 28px; }
+    .sticker.a b { font-size: 1.6rem; }
+    .sticker.b { display: none; }
+    .hero { padding-top: 48px; }
+    .xp { grid-template-columns: 1fr; }
+    .xp .date { border-right: 0; border-bottom: 3px solid var(--ink); flex-direction: row; flex-wrap: wrap; align-items: center; }
+    nav ul { display: none; }
+    nav .wrap { justify-content: flex-end; }
+    .fab { right: 12px; bottom: 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+  }
+
+  .xp.y .date { background: var(--lemon); }
+  .note { font-size: .92rem; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <ul>
+      <li><a href="#poin">Poin utama</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kompetensi">Kompetensi</a></li>
+      <li><a href="#pendidikan">Pendidikan</a></li>
+    </ul>
+    <a class="btn blue" href="cv.pdf" download>Unduh CV</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap hero">
+    <div class="tag">Terbuka untuk posisi CRM</div>
+    <h1>Alvi<br>Hardiansyah</h1>
+    <div class="role">CRM Specialist · Customer Experience · Analisis Data</div>
+    <p class="loc">Bandung, Jawa Barat</p>
+    <div class="actions">
+      <a class="btn pink" href="https://wa.me/6281241324676" target="_blank" rel="noopener">Hubungi saya</a>
+      <a class="btn blue" href="cv.pdf" download>Unduh CV</a>
+      <a class="btn white" href="#proyek">Lihat proyek</a>
+    </div>
+    <div class="sticker a" aria-hidden="true"><div><b>21</b>bulan<br>di CRM</div></div>
+    <div class="sticker b" aria-hidden="true"><div><b>2</b>dashboard<br>buatan sendiri</div></div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div>
+      <span>Customer Relationship</span><span>Feedback Pelanggan</span><span>Penanganan Komplain</span><span>Customer Experience</span><span>Analisis Data</span><span>Dashboard</span><span>Laporan Layanan</span><span>E-Commerce</span>
+      <span>Customer Relationship</span><span>Feedback Pelanggan</span><span>Penanganan Komplain</span><span>Customer Experience</span><span>Analisis Data</span><span>Dashboard</span><span>Laporan Layanan</span><span>E-Commerce</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="poin">
+      <div class="sec-head"><h2>Poin utama</h2><span class="pill">baca ini dulu</span></div>
+      <p class="lead">CRM Specialist e-commerce yang terbiasa membaca feedback pelanggan, merapikan data komplain, lalu menjadikannya laporan dan bahan perbaikan layanan.</p>
+      <div class="points">
+        <div class="box point c1"><b>21 bln</b><span>pengalaman CRM e-commerce (Feb 2025 – Okt 2026)</span></div>
+        <div class="box point c2"><b>2</b><span>proyek CRM dan dashboard komplain yang saya bangun sendiri</span></div>
+        <div class="box point c3"><b>3+ thn</b><span>pengalaman kerja di administrasi data dan operasional</span></div>
+        <div class="box point c4"><b>3,82</b><span>IPK S1 Manajemen Bisnis, lulus 2025</span></div>
+      </div>
+    </section>
+
+    <section id="pengalaman">
+      <div class="sec-head"><h2>Pengalaman kerja</h2><span class="pill">klik untuk detail</span></div>
+      <div class="stack">
+
+        <article class="box xp m">
+          <div class="date"><span class="star">Pengalaman CRM inti</span>Feb 2025 – Okt 2026</div>
+          <div class="body">
+            <h3>Customer Relationship Management (E-Commerce)</h3>
+            <p class="org">PT Safwan Berkah Indonesia</p>
+            <ul class="chips"><li>Analisis feedback pelanggan</li><li>Data pelanggan &amp; transaksi</li><li>Laporan layanan berkala</li><li>Koordinasi lintas departemen</li></ul>
+            <button class="btn" type="button" data-open="d-safwan" aria-haspopup="dialog">Lihat detail</button>
+          </div>
+        </article>
+
+        <article class="box xp b">
+          <div class="date">Jan 2023 – Mei 2024<small>Sebelumnya part-time Feb 2021 – Des 2022</small></div>
+          <div class="body">
+            <h3>Staff Human Resource &amp; General Affair</h3>
+            <p class="org">PT AlQosbah Karya Indonesia · diangkat sebagai karyawan tetap</p>
+            <ul class="chips"><li>Data 130 karyawan</li><li>Koordinasi vendor</li><li>Laporan operasional</li><li>Pemantauan KPI</li></ul>
+            <button class="btn" type="button" data-open="d-alqosbah" aria-haspopup="dialog">Lihat detail</button>
+          </div>
+        </article>
+
+        <article class="box xp p">
+          <div class="date">Agu 2024 – Okt 2024</div>
+          <div class="body">
+            <h3>Marketing – Account Officer Intern</h3>
+            <p class="org">Bank BJB Syariah KCP Arcamanik</p>
+            <ul class="chips"><li>Pelayanan nasabah</li><li>2 kampanye tabungan syariah</li><li>Komunikasi &amp; koordinasi</li></ul>
+            <button class="btn" type="button" data-open="d-bjb" aria-haspopup="dialog">Lihat detail</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="proyek">
+      <div class="sec-head"><h2>Proyek</h2><span class="pill">buatan sendiri</span></div>
+      <p class="lead">Dua proyek pribadi yang lahir dari pekerjaan CRM sehari-hari: merapikan data komplain dan menghubungkannya dengan data penjualan.</p>
+      <div class="stack">
+
+        <article class="box xp y">
+          <div class="date">Proyek pribadi<small>Berjalan, dipakai untuk mencatat komplain</small></div>
+          <div class="body">
+            <h3>CX Intelligence: Dashboard Komplain</h3>
+            <p class="org">Google Sheets · Apps Script · HTML &amp; JavaScript</p>
+            <ul class="chips"><li>Input komplain harian</li><li>Kategori terstandar</li><li>Rating sebelum &amp; sesudah</li><li>Ekspor laporan</li></ul>
+            <button class="btn" type="button" data-open="d-cx" aria-haspopup="dialog">Lihat detail</button>
+          </div>
+        </article>
+
+        <article class="box xp y">
+          <div class="date">Proyek pribadi<small>Dalam pengembangan</small></div>
+          <div class="body">
+            <h3>Marketplace CRM &amp; Complaint Analytics</h3>
+            <p class="org">Next.js · TypeScript · PostgreSQL (Supabase) · Tailwind CSS</p>
+            <ul class="chips"><li>Multi-tenant</li><li>Pencocokan data otomatis</li><li>Impor penjualan</li><li>Detail pesanan</li></ul>
+            <button class="btn" type="button" data-open="d-crm" aria-haspopup="dialog">Lihat detail</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="kompetensi">
+      <div class="sec-head"><h2>Kompetensi</h2><span class="pill">alat &amp; kemampuan</span></div>
+      <div class="skillgrid">
+        <div class="box skill"><h3>CRM &amp; Customer Experience</h3><ul class="tags"><li>Monitoring feedback</li><li>Penanganan komplain</li><li>Administrasi data pelanggan</li><li>Laporan layanan</li><li>Koordinasi lintas departemen</li><li>Peningkatan CX</li></ul></div>
+        <div class="box skill"><h3>Data &amp; analitik</h3><ul class="tags"><li>Microsoft Excel</li><li>Google Spreadsheet</li><li>Tableau</li><li>RapidMiner</li><li>Dashboard</li><li>Data Analytics</li></ul></div>
+        <div class="box skill"><h3>E-commerce</h3><ul class="tags"><li>Seller Center</li><li>Shopee</li><li>TikTok Shop</li><li>Data pesanan</li><li>Penilaian toko</li></ul></div>
+        <div class="box skill"><h3>Membangun tools sendiri</h3><ul class="tags"><li>Google Apps Script</li><li>HTML &amp; JavaScript</li><li>Next.js</li><li>TypeScript</li><li>Supabase</li></ul></div>
+        <div class="box skill"><h3>Konten &amp; desain</h3><ul class="tags"><li>Canva</li><li>Adobe Photoshop</li><li>Adobe Lightroom</li><li>CapCut</li></ul></div>
+        <div class="box skill"><h3>Soft skill</h3><ul class="tags"><li>Komunikasi</li><li>Problem solving</li><li>Analitis</li><li>Koordinasi</li><li>Kerja tim</li><li>Manajemen waktu</li><li>Teliti</li></ul></div>
+      </div>
+    </section>
+
+    <section id="pendidikan">
+      <div class="sec-head"><h2>Pendidikan</h2></div>
+      <div class="duo">
+        <article class="box card">
+          <h3>S1 Manajemen Bisnis</h3>
+          <span class="sub">IPK 3,82 / 4,00 · 2021 – 2025</span>
+          <p>Universitas Adhirajasa Reswara Sanjaya (ARS University). Lulus 2025.</p>
+          <ul><li>Data Analytics &amp; Big Data</li><li>Manajemen Pemasaran</li><li>Manajemen Bisnis dan Operasional</li><li>Manajemen Risiko</li></ul>
+        </article>
+        <article class="box card">
+          <h3>Teknik Kendaraan Ringan</h3>
+          <span class="sub">Nilai kelulusan 87,83 · 2017 – 2020</span>
+          <p>SMK Negeri 6 Bandung. Peserta Toyota Technical Education Program.</p>
+        </article>
+      </div>
+      <p style="margin:28px 0 0"><strong>Bahasa:</strong> Indonesia (native), Inggris (menengah), Arab, Jepang, dan Korea (pasif).</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Yuk ngobrol</h2>
+    <p>Sedang membuka lowongan CRM Specialist, Customer Experience, atau Customer Relationship? Saya siap wawancara.</p>
+    <div class="actions">
+      <a class="btn" href="https://wa.me/6281241324676" target="_blank" rel="noopener">Hubungi saya</a>
+      <a class="btn white" href="cv.pdf" download>Unduh CV</a>
+    </div>
+    <p style="margin:36px 0 0;font-size:.9rem">© Alvi Hardiansyah</p>
+  </div>
+</footer>
+
+<a class="btn fab" href="https://wa.me/6281241324676" target="_blank" rel="noopener">Hubungi saya</a>
+
+<dialog id="d-safwan" aria-labelledby="t-safwan">
+  <div class="dlg m">
+    <header><div><h3 id="t-safwan">Customer Relationship Management (E-Commerce)</h3><p>PT Safwan Berkah Indonesia · Feb 2025 – Okt 2026</p></div><button class="btn x" type="button" data-close aria-label="Tutup">✕</button></header>
+    <div class="content"><ul class="det">
+      <li>Mengelola administrasi data dan memantau feedback pelanggan untuk mendukung evaluasi kinerja dan pelaporan operasional.</li>
+      <li>Memantau dan mengevaluasi umpan balik pelanggan untuk menemukan masalah dan peluang peningkatan kualitas layanan.</li>
+      <li>Mengelola data pelanggan dan transaksi, serta menyusun laporan aktivitas pelayanan secara berkala.</li>
+      <li>Berkoordinasi dengan tim lintas departemen agar kendala pelanggan selesai dan operasional harian lancar.</li>
+      <li>Mendukung peningkatan customer experience yang berdampak positif pada penilaian toko.</li>
+    </ul></div>
+  </div>
+</dialog>
+
+<dialog id="d-alqosbah" aria-labelledby="t-alqosbah">
+  <div class="dlg b">
+    <header><div><h3 id="t-alqosbah">Staff Human Resource &amp; General Affair</h3><p>PT AlQosbah Karya Indonesia · Jan 2023 – Mei 2024 (diangkat karyawan tetap). Sebelumnya HR &amp; Operations Freelancer / Part-Time, Feb 2021 – Des 2022.</p></div><button class="btn x" type="button" data-close aria-label="Tutup">✕</button></header>
+    <div class="content"><ul class="det">
+      <li>Mengelola administrasi dan dokumentasi data sekitar 130 karyawan di 2 cabang dan 1 kantor pusat: pendataan, pembaruan, pengarsipan, dan pemberkasan.</li>
+      <li>Mengelola data karyawan, absensi, dan cuti lewat HRIS Talenta dan sistem internal.</li>
+      <li>Memantau dan memperbarui data KPI karyawan secara berkala.</li>
+      <li>Berkoordinasi dengan vendor/supplier, menyiapkan administrasi pengadaan, dan mendata aset serta inventaris.</li>
+      <li>Menyusun laporan operasional.</li>
+    </ul></div>
+  </div>
+</dialog>
+
+<dialog id="d-bjb" aria-labelledby="t-bjb">
+  <div class="dlg p">
+    <header><div><h3 id="t-bjb">Marketing – Account Officer Intern</h3><p>Bank BJB Syariah KCP Arcamanik · Agu 2024 – Okt 2024</p></div><button class="btn x" type="button" data-close aria-label="Tutup">✕</button></header>
+    <div class="content"><ul class="det">
+      <li>Mendukung aktivitas pemasaran dan pelayanan produk perbankan syariah.</li>
+      <li>Membantu administrasi dan pengelolaan informasi pemasaran untuk 2 kampanye produk tabungan syariah selama 3 bulan.</li>
+      <li>Berkomunikasi dan berkoordinasi untuk mendukung pelayanan nasabah.</li>
+    </ul></div>
+  </div>
+</dialog>
+
+<dialog id="d-cx" aria-labelledby="t-cx">
+  <div class="dlg y">
+    <header><div><h3 id="t-cx">CX Intelligence: Dashboard Komplain</h3><p>Proyek pribadi · Google Sheets, Apps Script, HTML &amp; JavaScript</p></div><button class="btn x" type="button" data-close aria-label="Tutup">✕</button></header>
+    <div class="content"><ul class="det">
+      <li>Mengubah catatan komplain di Google Sheets menjadi dashboard khusus Customer Experience, lengkap dengan kartu KPI dan grafik.</li>
+      <li>Komplain dicatat harian lewat form web, lalu otomatis masuk ke kolom sheet yang sesuai.</li>
+      <li>Kategori dibuat terstandar: channel marketplace, faktor (internal/eksternal), jenis (fulfillment, logistik, miss information), dan solusi (tukar, pengembalian, kirim ulang).</li>
+      <li>Mencatat rating sebelum dan sesudah penanganan, sehingga dampak penanganan komplain bisa dibandingkan.</li>
+      <li>Dilengkapi login PIN, pengelolaan user, dan ekspor laporan ke CSV, Excel, PDF, dan PPT.</li>
+    </ul></div>
+  </div>
+</dialog>
+
+<dialog id="d-crm" aria-labelledby="t-crm">
+  <div class="dlg y">
+    <header><div><h3 id="t-crm">Marketplace CRM &amp; Complaint Analytics</h3><p>Proyek pribadi, dalam pengembangan · Next.js, TypeScript, PostgreSQL (Supabase), Tailwind CSS</p></div><button class="btn x" type="button" data-close aria-label="Tutup">✕</button></header>
+    <div class="content"><ul class="det">
+      <li>Website CRM multi-tenant untuk penjual di marketplace: tiap perusahaan memiliki login sendiri dan hanya melihat datanya sendiri (Row-Level Security).</li>
+      <li>Menghubungkan ekspor data penjualan Seller Center, ulasan, dan file komplain Excel secara otomatis.</li>
+      <li>ID pesanan menjadi kunci utama pencocokan. Nomor resi dan identitas pelanggan anonim hanya pendukung, dan data yang meragukan tidak dipaksakan cocok.</li>
+      <li>Setiap data diberi status MATCHED, UNMATCHED, NEEDS_REVIEW, atau INVALID agar mudah ditinjau.</li>
+      <li>Sudah memiliki login, impor penjualan, halaman detail pesanan, dan mesin pencocokan. Dikerjakan bertahap, dimulai dari audit file dan pemetaan kolom sebelum menulis kode.</li>
+    </ul></div>
+  </div>
+</dialog>
+
+<script>
+  document.querySelectorAll("[data-open]").forEach((b) =>
+    b.addEventListener("click", () => document.getElementById(b.dataset.open).showModal()));
+  document.querySelectorAll("dialog").forEach((d) => {
+    d.addEventListener("click", (e) => { if (e.target === d) d.close(); });
+    d.querySelectorAll("[data-close]").forEach((x) => x.addEventListener("click", () => d.close()));
+  });
+</script>
+</body>
+</html>
